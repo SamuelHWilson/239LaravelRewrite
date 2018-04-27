@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('/', function() {
+    return redirect("/orders/");
+});
 Route::resource('orders', 'OrderController');
 Route::resource('products', 'ProductController');
 
